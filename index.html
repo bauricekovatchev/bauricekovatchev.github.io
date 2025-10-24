@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Baurice Kovatchev | Portfolio</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Raleway:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav>
+    <h2 class="logo">Baurice Kovatchev</h2>
+    <ul>
+      <li class="active" data-target="about">About Me</li>
+      <li data-target="education">Education</li>
+      <li data-target="projects">Projects</li>
+      <li data-target="work">Work Experience</li>
+      <li data-target="research">Research</li>
+      <li data-target="skills">Skills</li>
+      <li data-target="contact">Contact</li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <main id="mainContent">
+    <!-- About Me (landing) -->
+    <section id="about" class="snap-section">
+      <h1 class="name-title">Baurice Kovatchev</h1>
+      <p>
+        Hi — I'm Baurice Kovatchev, a developer and engineer currently studying
+        at Brown. I enjoy building hardware/software systems, designing robust
+        electronics, and solving applied engineering problems. (Edit this later.)
+      </p>
+
+      <div class="button-group">
+        <a class="button resume" href="Baurice_Kovatchev_Resume_2025.pdf" download>
+          <img src="Icons/resume_icon.png" alt="resume">
+          <span>Resume</span>
+        </a>
+
+        <a class="button linkedin" href="https://www.linkedin.com/in/baurice-kovatchev" target="_blank" rel="noopener">
+          <img src="Icons/linkedin_icon.png" alt="linkedin">
+          <span>LinkedIn</span>
+        </a>
+
+        <button class="button contact" onclick="scrollToSection('contact')">
+          <img src="Icons/contact_icon.png" alt="mail">
+          <span>Contact</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="snap-section">
+      <h1>Education</h1>
+
+      <div class="edu-block">
+        <h3>Brown University — B.Sc. Electrical Engineering; B.A. Economics</h3>
+        <p>Expected Graduation: May 2027 — GPA: 4.0 / 4.0. Tau Beta Pi inductee.</p>
+        <p class="muted">Relevant courses listed below (from resume). See course descriptions on pages 2–(resume).</p>
+
+        <!-- Course dropdowns -->
+        <div class="course-dropdowns">
+          <details>
+            <summary>Bachelor of Science — Electrical Engineering (Course groups)</summary>
+            <div class="course-group">
+              <h4>Mathematics</h4>
+              <ul>
+                <li>MATH 0180: Multivariable Calculus</li>
+                <li>APMA 0350: Applied Ordinary Differential Equations</li>
+                <li>APMA 0360: Applied Partial Differential Equations</li>
+                <li>MATH 0520: Linear Algebra with Theory</li>
+                <li>APMA 1650: Statistical Inference I</li>
+              </ul>
+            </div>
+
+            <div class="course-group">
+              <h4>Engineering / Physics Foundations</h4>
+              <ul>
+                <li>ENGN 0032: Introduction to Engineering: Design (pass/fail)</li>
+                <li>ENGN 0040: Dynamics and Vibrations</li>
+                <li>ENGN 0410: Materials Science</li>
+                <li>ENGN 0510: Electricity and Magnetism</li>
+                <li>ENGN 0720: Thermodynamics</li>
+              </ul>
+            </div>
+
+            <div class="course-group">
+              <h4>Computer Science</h4>
+              <ul>
+                <li>CSCI 0150: Introduction to Object-Oriented Programming and Computer Science</li>
+                <li>CSCI 0200: Program Design with Data Structures and Algorithms</li>
+                <li>APMA 0160: Introduction to Scientific Computing</li>
+              </ul>
+            </div>
+
+            <div class="course-group">
+              <h4>Electrical Engineering Upper Level</h4>
+              <ul>
+                <li>ENGN 0520: Electrical Circuits and Signals</li>
+                <li>ENGN 1570: Linear System Analysis</li>
+                <li>ENGN 1590: Semiconductor Devices</li>
+                <li>ENGN 1620: Analysis and Design of Electronic Circuits</li>
+                <li>ENGN 1930Y: Control Systems Engineering</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>Bachelor of Arts — Economics (Course groups)</summary>
+            <div class="course-group">
+              <h4>Mathematics</h4>
+              <p>(Refer to Electrical Engineering section above)</p>
+            </div>
+
+            <div class="course-group">
+              <h4>Economics Foundations</h4>
+              <ul>
+                <li>ECON 0110: Principles of Economics</li>
+                <li>ECON 1130: Intermediate Microeconomics (Mathematical)</li>
+                <li>ECON 1210: Intermediate Macroeconomics</li>
+              </ul>
+            </div>
+
+            <div class="course-group">
+              <h4>Economics Upper Level</h4>
+              <ul>
+                <li>ECON 1850: Theory of Economic Growth</li>
+                <li>ECON 1710: Investments I</li>
+                <li>ECON 1629: Applied Research Methods for Economists</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>Other Courses & High School</summary>
+            <div class="course-group">
+              <ul>
+                <li>GRMN 1320X: Weimar Culture: German Modernity and Its Discontents</li>
+                <li>COLT 0710Q: The Odyssey in Literature and Film (pass/fail)</li>
+                <li>MUSC 0680: Chamber Music Performance (pass/fail)</li>
+              </ul>
+            </div>
+
+            <div class="course-group">
+              <h4>High School</h4>
+              <p>St. Paul's School, Concord, NH — inducted into the Cum Laude Society; GPA listed as 4.02 / 4.0.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="snap-section">
+      <h1>Projects</h1>
+
+      <!-- Subsection navigation -->
+      <div class="projects-nav">
+        <a class="proj-link" href="#projects-fsae" onclick="scrollToHash('projects-fsae')">FSAE</a>
+        <a class="proj-link" href="#projects-lab" onclick="scrollToHash('projects-lab')">Lab</a>
+        <a class="proj-link" href="#projects-class" onclick="scrollToHash('projects-class')">Class</a>
+      </div>
+
+      <!-- FSAE subsection -->
+      <div id="projects-fsae" class="proj-subsection">
+        <h2>FSAE</h2>
+        <p class="muted small">(Clicking "FSAE" in Projects goes to the FSAE entry in Work Experience.)</p>
+        <div class="card-grid two-col">
+          <a class="project-card" href="Projects/sample-project-1.html#projects-fsae">
+            <div class="card-title">Sample Project 1</div>
+            <div class="card-image"> <!-- placeholder --> </div>
+          </a>
+          <a class="project-card" href="Projects/sample-project-2.html#projects-fsae">
+            <div class="card-title">Sample Project 2</div>
+            <div class="card-image"></div>
+          </a>
+          <a class="project-card" href="Projects/sample-project-3.html#projects-fsae">
+            <div class="card-title">Sample Project 3</div>
+            <div class="card-image"></div>
+          </a>
+          <a class="project-card" href="Projects/sample-project-4.html#projects-fsae">
+            <div class="card-title">Sample Project 4</div>
+            <div class="card-image"></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Lab subsection -->
+      <div id="projects-lab" class="proj-subsection">
+        <h2>Lab</h2>
+        <p class="muted small">(Clicking "Lab" goes to Research.)</p>
+        <div class="card-grid two-col">
+          <a class="project-card" href="Projects/sample-project-5.html#projects-lab">
+            <div class="card-title">Sample Project 5</div>
+            <div class="card-image"></div>
+          </a>
+          <a class="project-card" href="Projects/sample-project-6.html#projects-lab">
+            <div class="card-title">Sample Project 6</div>
+            <div class="card-image"></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Class subsection -->
+      <div id="projects-class" class="proj-subsection">
+        <h2>Class</h2>
+        <p class="muted small">(Clicking "Class" goes to Education.)</p>
+        <div class="card-grid two-col">
+          <a class="project-card" href="Projects/sample-project-7.html#projects-class">
+            <div class="card-title">Sample Project 7</div>
+            <div class="card-image"></div>
+          </a>
+          <a class="project-card" href="Projects/sample-project-8.html#projects-class">
+            <div class="card-title">Sample Project 8</div>
+            <div class="card-image"></div>
+          </a>
+          <a class="project-card" href="Projects/sample-project-9.html#projects-class">
+            <div class="card-title">Sample Project 9</div>
+            <div class="card-image"></div>
+          </a>
+          <a class="project-card" href="Projects/sample-project-10.html#projects-class">
+            <div class="card-title">Sample Project 10</div>
+            <div class="card-image"></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="work" class="snap-section">
+      <h1>Work Experience</h1>
+
+      <!-- FSAE (also referenced from Projects FSAE) -->
+      <div id="work-fsae" class="work-block">
+        <h3>Brown University Formula SAE Car Team — Drivetrain Lead / Electronics Member</h3>
+        <p class="muted">March 2024 – Present</p>
+        <ul>
+          <li>Lead responsible engineer for full drivetrain system: design, manufacturing, assembly, and testing.</li>
+          <li>Develop MATLAB lap-time & drivetrain simulations to optimize gear ratios and acceleration profiles.</li>
+          <li>Manage a 7-member drivetrain subteam and integrate drivetrain telemetry with vehicle ECU.</li>
+          <li>Contributed to 10th place Endurance and 18th place Overall at the 2025 FSAE competition.</li>
+        </ul>
+      </div>
+
+      <!-- Doppelmayr -->
+      <div class="work-block">
+        <h3>Doppelmayr Cable Car — Hydraulics Intern</h3>
+        <p class="muted">Wolfurt, Austria | July 2025 – August 2025</p>
+        <ul>
+          <li>Constructed and optimized hydraulic systems for ropeway motors and emergency brakes; validated high-pressure systems.</li>
+          <li>Designed and led safety and fatigue testing to ensure operational integrity.</li>
+        </ul>
+      </div>
+
+      <!-- Mercedes -->
+      <div class="work-block">
+        <h3>Mercedes-Benz — Production Intern</h3>
+        <p class="muted">Stuttgart, Germany | June 2024 – July 2024</p>
+        <ul>
+          <li>Owned three precision assembly stations for AMG A-Class axles; improved process efficiency and quality control.</li>
+          <li>Drove a process improvement that reduced assembly downtime by 16%.</li>
+        </ul>
+      </div>
+
+      <!-- Wheeler School & Brown Design Workshop -->
+      <div class="work-block">
+        <h3>Wheeler School — High School Economics Teacher</h3>
+        <p class="muted">October 2024 – August 2025</p>
+        <ul>
+          <li>Taught macroeconomics, market theory, and portfolio strategy; developed an applied finance curriculum.</li>
+        </ul>
+      </div>
+
+      <div class="work-block">
+        <h3>Brown Design Workshop — Monitor</h3>
+        <p class="muted">Dec 2024 – Present</p>
+        <ul>
+          <li>Led workshops on soldering, CNC, 3D printing; ensured shop safety and aided members on projects.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="snap-section">
+      <h1>Research</h1>
+
+      <div id="research-lab" class="research-block">
+        <h3>Nanoscale Physics & Quantum Devices Lab — Research Assistant</h3>
+        <p class="muted">Sept 2025 – Present</p>
+        <ul>
+          <li>Engineered precision noise-reduction circuits for MTJ measurements to increase detectability of spin-dependent phenomena.</li>
+          <li>Designed PCB-based measurement system adopted lab-wide to streamline MTJ testing and improve stability.</li>
+          <li>Advanced detection goals for ultra-small magnetic fields with high stability (potential neuroimaging applications).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="snap-section">
+      <h1>Skills</h1>
+
+      <div class="skills-dropdowns">
+        <details>
+          <summary>Computer & Tools</summary>
+          <ul>
+            <li>MATLAB, Simulink, GitHub, Microsoft Office/Excel, Google Workspace</li>
+            <li>KiCad, PCB design, LTspice</li>
+            <li>SolidWorks, CAD, Fusion 360, CAM</li>
+            <li>Arduino, DAQ systems, oscilloscope</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Programming</summary>
+          <ul>
+            <li>Java (proficient), Python (intermediate), C (intermediate)</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Languages & Other</summary>
+          <ul>
+            <li>English (native), German (proficient), Bulgarian (proficient), Spanish (beginner)</li>
+            <li>Cabin construction, cello, workshop & fabrication skills</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contact (bottom) -->
+    <section id="contact" class="snap-section">
+      <h1>Contact</h1>
+      <p>You can reach me at:</p>
+      <p><strong>baurice_kovatchev@brown.edu</strong><br>
+         <strong>baurice.kovatchev@gmail.com</strong></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/baurice-kovatchev" target="_blank" rel="noopener">baurice-kovatchev</a></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
