@@ -1,23 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sample Project 1</title>
-  <link href="../style.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Off-Grid Cabin Build | Projects | Ryan Smathers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
   <style>
-    body{ background:#0f1114; color:#e6e9ee; font-family: 'Poppins', sans-serif; display:flex; align-items:center; justify-content:center; height:100vh; }
-    .panel{ max-width:900px; background:#0f1316; padding:22px; border-radius:12px; border:1px solid #1f2326; }
-    a.back{ display:inline-block; margin-top:18px; padding:8px 12px; background:#101318; color:#cfefff; border-radius:8px; text-decoration:none; font-weight:700; }
+    body {
+      margin: 0;
+      font-family: 'Raleway', 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #0f1114, #0f1216);
+      color: #c7cbd0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background: #0d0f12;
+      border-bottom: 1px solid #1a1d21;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .project-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #4fb0ff;
+      letter-spacing: 0.5px;
+    }
+
+    a.back-link {
+      text-decoration: none;
+      color: #9aa0a6;
+      font-weight: 700;
+      border: 1px solid #1f2326;
+      padding: 8px 16px;
+      border-radius: 10px;
+      background: #14171b;
+      transition: 0.2s ease;
+    }
+
+    a.back-link:hover {
+      background: #1b1f24;
+      color: #bfe7ff;
+    }
+
+    /* Content */
+    main {
+      flex-grow: 1;
+      padding: 60px 10%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    section {
+      background: #0f1214;
+      border: 1px solid #1e2226;
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .text-block {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #c7cbd0;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 320px;
+      background: #fff;
+      opacity: 0.06;
+      border-radius: 14px;
+    }
+
+    h2 {
+      color: #bfe7ff;
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 800px) {
+      main {
+        padding: 40px 6%;
+      }
+      section {
+        padding: 28px;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="panel">
-    <h1>Sample Project 1</h1>
-    <p>This is a placeholder page for Sample Project 1.</p>
+  <header>
+    <div class="project-title">Off-Grid Cabin Build</div>
+    <a href="index.html#projects" class="back-link">← Back to Projects</a>
+  </header>
 
-    <!-- Back button returns to index with the fragment (if present) -->
-    <a class="back" href="../index.html#projects-fsae">← Back to FSAE</a>
-  </div>
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p class="text-block">
+        This project documents the complete design and construction of a fully off-grid cabin, from concept to completion.
+        The goal was to create a sustainable, comfortable living space powered by renewable energy, using reclaimed materials
+        wherever possible.
+      </p>
+      <div class="image-placeholder"></div>
+    </section>
+
+    <section>
+      <h2>Design and Planning</h2>
+      <p class="text-block">
+        The design process began with rough sketches and digital modeling to determine the optimal layout and orientation
+        for solar exposure. Structural plans were adjusted to maximize insulation efficiency and reduce long-term maintenance needs.
+      </p>
+      <div class="image-placeholder"></div>
+      <p class="text-block">
+        Materials were sourced locally, with a focus on reusing lumber and fixtures to reduce cost and environmental impact.
+      </p>
+    </section>
+
+    <section>
+      <h2>Construction and Systems</h2>
+      <p class="text-block">
+        Construction was completed over several months, featuring a raised foundation, passive cooling techniques, and
+        a hybrid solar battery setup for power. The cabin includes a rainwater collection system and composting toilet,
+        allowing it to operate fully off-grid.
+      </p>
+      <div class="image-placeholder"></div>
+    </section>
+
+    <section>
+      <h2>Results and Reflections</h2>
+      <p class="text-block">
+        The completed cabin demonstrates the viability of small-scale, sustainable living with minimal footprint. The process
+        offered valuable insights into real-world project management, material selection, and renewable system integration.
+      </p>
+      <div class="image-placeholder"></div>
+    </section>
+  </main>
 </body>
 </html>
