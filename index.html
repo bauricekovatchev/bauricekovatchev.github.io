@@ -7,150 +7,316 @@
   <link href="style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- Sidebar -->
-  <nav>
-    <h2 class="logo">Baurice Kovatchev</h2>
-    <ul>
-      <li class="active" data-target="about">About Me</li>
-      <li data-target="education">Education</li>
-      <li data-target="projects">Projects</li>
-      <li data-target="work">Work Experience</li>
-      <li data-target="research">Research</li>
-      <li data-target="skills">Skills</li>
-      <li data-target="contact">Contact</li>
-    </ul>
-  </nav>
+<!-- Sidebar -->
+<nav>
+  <h2 class="logo">Baurice Kovatchev</h2>
+  <ul>
+    <li class="active" data-target="about">About Me</li>
+    <li data-target="education">Education</li>
+    <li data-target="projects">Projects</li>
+    <li data-target="work">Work Experience</li>
+    <li data-target="research">Research</li>
+    <li data-target="skills">Skills</li>
+    <li data-target="contact">Contact</li>
+  </ul>
+</nav>
 
-  <!-- Main -->
-  <main id="mainContent">
+<!-- Main -->
+<main id="mainContent">
 
-    <!-- About Me -->
-    <section id="about" class="snap-section">
-      <h1 class="name-title">Baurice Kovatchev</h1>
-      <p>
-        Hi! I'm Baurice Kovatchev, a junior studying electrical engineering and economics at Brown University. I love building anything that comes my way, and throughout my time in college I have gained practical experience building cars, circuits, and control systems. 
-      </p>
-      <p>
-        I enjoy playing hockey, and I am on the club hockey team at Brown. I also play cello in a chamber music group. And I have completed 2 sprint triathlons! 
-      </p>
+<!-- About Me -->
+<section id="about" class="snap-section">
+  <h1 class="name-title">Baurice Kovatchev</h1>
+  <p>
+    Hi! I'm Baurice Kovatchev, a junior studying electrical engineering and economics at Brown University.
+    I love building anything that comes my way, and throughout my time in college I have gained practical
+    experience building cars, circuits, and control systems.
+  </p>
+  <p>
+    I enjoy playing hockey, and I am on the club hockey team at Brown. I also play cello in a chamber music
+    group. And I have completed 2 sprint triathlons!
+  </p>
 
-      <div class="button-group">
-        <a class="button resume" href="Baurice_Kovatchev_Resume.pdf" download>
-          <img src="Icons/resume_icon.png" alt="resume">
-          <span>Resume</span>
-        </a>
+  <div class="button-group">
+    <a class="button resume" href="Baurice_Kovatchev_Resume.pdf" download>
+      <img src="Icons/resume_icon.png" alt="resume">
+      <span>Resume</span>
+    </a>
 
-        <a class="button linkedin" href="https://www.linkedin.com/in/baurice-kovatchev" target="_blank" rel="noopener">
-          <img src="Icons/linkedin_icon.png" alt="linkedin">
-          <span>LinkedIn</span>
-        </a>
+    <a class="button linkedin" href="https://www.linkedin.com/in/baurice-kovatchev" target="_blank" rel="noopener">
+      <img src="Icons/linkedin_icon.png" alt="linkedin">
+      <span>LinkedIn</span>
+    </a>
 
-        <button class="button contact" onclick="scrollToSection('contact')">
-          <img src="Icons/contact_icon.png" alt="mail">
-          <span>Contact</span>
-        </button>
-      </div>
-    </section>
+    <button class="button contact" onclick="scrollToSection('contact')">
+      <img src="Icons/contact_icon.png" alt="mail">
+      <span>Contact</span>
+    </button>
+  </div>
+</section>
 
-    <!-- Education -->
-    <section id="education" class="snap-section">
-      <h1>Education</h1>
+<!-- ======================= -->
+<!-- ===== EDUCATION ======= -->
+<!-- ======================= -->
 
-      <div class="edu-block">
-        <h3>Brown University — B.Sc. Electrical Engineering; B.A. Economics</h3>
-        <p style="line-height:1.25;">Providence, RI</p>
-        <p style="line-height:1.25;">Expected Graduation: May 2027 — GPA: 4.0 / 4.0</p>
-        <p style="line-height:1.25;">Tau Beta Pi Engineering Honors Society Inductee</p>
+<section id="education" class="snap-section">
+  <h1>Education</h1>
 
-        <div class="course-dropdowns">
+  <div class="edu-block">
+    <h3>Brown University — B.Sc. Electrical Engineering; B.A. Economics</h3>
+    <p style="line-height:1.25;">Providence, RI</p>
+    <p style="line-height:1.25;">Expected Graduation: May 2027 — GPA: 4.0 / 4.0</p>
+    <p style="line-height:1.25;">Tau Beta Pi Engineering Honors Society Inductee</p>
+
+    <div class="course-dropdowns">
+
+      <!-- ===== Electrical Engineering ===== -->
+      <details>
+        <summary>Bachelor of Science — Electrical Engineering</summary>
+
+        <!-- Mathematics -->
+        <div class="course-group">
+          <h4>Mathematics</h4>
+
           <details>
-            <summary>Bachelor of Science — Electrical Engineering</summary>
-            <div class="course-group">
-              <h4>Mathematics</h4>
-              <ul>
-                <li>MATH 0180: Multivariable Calculus</li>
-                <li>APMA 0350: Applied Ordinary Differential Equations</li>
-                <li>APMA 0360: Applied Partial Differential Equations</li>
-                <li>MATH 0520: Linear Algebra with Theory</li>
-                <li>APMA 1650: Statistical Inference I</li>
-              </ul>
-            </div>
-
-            <div class="course-group">
-              <h4>Engineering Foundations</h4>
-              <ul>
-                <li>ENGN 0032: Introduction to Engineering: Design</li>
-                <li>ENGN 0040: Dynamics and Vibrations</li>
-                <li>ENGN 0410: Materials Science</li>
-                <li>ENGN 0510: Electricity and Magnetism</li>
-                <li>ENGN 0720: Thermodynamics</li>
-              </ul>
-            </div>
-
-            <div class="course-group">
-              <h4>Computer Science</h4>
-              <ul>
-                <li>CSCI 0150: Introduction to Object-Oriented Programming and Computer Science</li>
-                <li>CSCI 0200: Program Design with Data Structures and Algorithms</li>
-                <li>APMA 0160: Introduction to Scientific Computing</li>
-              </ul>
-            </div>
-
-            <div class="course-group">
-              <h4>Electrical Engineering Upper Level</h4>
-              <ul>
-                <li>ENGN 0520: Electrical Circuits and Signals</li>
-                <li>ENGN 1570: Linear System Analysis</li>
-                <li>ENGN 1590: Semiconductor Devices</li>
-                <li>ENGN 1620: Analysis and Design of Electronic Circuits</li>
-                <li>ENGN 1930Y: Control Systems Engineering</li>
-              </ul>
-            </div>
+            <summary>MATH 0180: Multivariable Calculus</summary>
+            <p>Three-dimensional analytic geometry. Differential and integral calculus of functions of two or three variables: partial derivatives, multiple integrals, Green's Theorem, Stokes' theorem, and the divergence theorem.</p>
           </details>
 
           <details>
-            <summary>Bachelor of Arts — Economics</summary>
-            <div class="course-group">
-              <h4>Economics Foundations</h4>
-              <ul>
-                <li>ECON 0110: Principles of Economics</li>
-                <li>ECON 1130: Intermediate Microeconomics (Mathematical)</li>
-                <li>ECON 1210: Intermediate Macroeconomics</li>
-              </ul>
-            </div>
-
-            <div class="course-group">
-              <h4>Economics Upper Level</h4>
-              <ul>
-                <li>ECON 1850: Theory of Economic Growth</li>
-                <li>ECON 1710: Investments I</li>
-                <li>ECON 1629: Applied Research Methods for Economists</li>
-              </ul>
-            </div>
+            <summary>APMA 0350: Applied Ordinary Differential Equations</summary>
+            <p>This course provides a comprehensive introduction to ordinary differential equations and their applications. During the course, we will see how applied mathematicians use ordinary differential equations to solve practical applications, from understanding the underlying problem, creating a differential-equations model, solving the model using analytical, numerical, or qualitative methods, and interpreting the findings in terms of the original problem. We will also learn about the underlying rigorous theoretical foundations of differential equations.</p>
           </details>
 
           <details>
-            <summary>Other Courses</summary>
-            <div class="course-group">
-              <ul>
-                <li>GRMN 1320X: Weimar Culture: German Modernity and Its Discontents</li>
-                <li>COLT 0710Q: The Odyssey in Literature and Film</li>
-                <li>MUSC 0680: Chamber Music Performance</li>
-              </ul>
-            </div>
+            <summary>APMA 0360: Applied Partial Differential Equations</summary>
+            <p>This course provides an introduction to partial differential equations and their applications. We will learn how to use partial differential equations to solve problems that arise in practical applications, formulating questions about a real-world problem, creating a partial differential equation model that can help answer these questions, solving the resulting system using analytical, numerical, and qualitative methods, and interpreting the results in terms of the original application. To help us support and justify our approaches and solutions, we will also learn about theoretical foundations of partial differential equations.</p>
+          </details>
+
+          <details>
+            <summary>MATH 0540: Linear Algebra with Theory</summary>
+            <p>This course provides a rigorous introduction to the theory of linear algebra. Topics covered include: matrices, linear equations, determinants, and eigenvalues; vector spaces and linear transformations; inner products; Hermitian, orthogonal, and unitary matrices; and Jordan normal form. MATH 540 provides a more theoretical treatment of the topics in MATH 520, and students will have opportunities during the course to develop proof-writing skills.</p>
+          </details>
+
+          <details>
+            <summary>APMA 1650: Statistical Inference I</summary>
+            <p>APMA 1650 is an integrated first course in mathematical statistics. The first half of APMA 1650 covers probability and the last half is statistics, integrated with its probabilistic foundation. Specific topics include probability spaces, discrete and continuous random variables, methods for parameter estimation, confidence intervals, and hypothesis testing.</p>
           </details>
         </div>
-      </div>
 
-      <div class="edu-block">
-        <h3>St. Paul’s School — High School Diploma</h3>
-        <p style="line-height:1.25;">Concord, NH</p>
-        <p style="line-height:1.25;">Graduation 2023 — GPA: 4.02 / 4.0</p>
-        <p style="line-height:1.25;">Cum Laude Society Inductee</p>
-      </div>
-    </section>
+        <!-- Engineering Foundations -->
+        <div class="course-group">
+          <h4>Engineering Foundations</h4>
+
+          <details>
+            <summary>ENGN 0032: Introduction to Engineering: Design</summary>
+            <p>This course is an introduction to the engineering profession with an emphasis on design. It is a project-based class which consists of three major design projects. Working in small groups, students leverage the design process and engineering discipline to present solutions to three design briefs. In weekly studio sessions, students will learn different tools (e.g., Matlab) associated with engineering and design. ENGN 0032 provides the foundation for further study in engineering.</p>
+          </details>
+
+          <details>
+            <summary>ENGN 0040: Dynamics and Vibrations</summary>
+            <p>A broad introduction to Newtonian dynamics of particles and rigid bodies with applications to engineering design. Concepts include kinematics and dynamics of particles and rigid bodies; conservation laws; vibrations of single degree of freedom systems; and use of MATLAB to solve equations of motion and optimize engineering designs. Examples of applications are taken from all engineering disciplines. Lectures, recitation, and team design projects, including use of Brown Design Workshop.</p>
+          </details>
+
+          <details>
+            <summary>ENGN 0410: Materials Science</summary>
+            <p>Relationship between the structure of matter and its engineering properties. Topics: primary and secondary bonding; crystal structure; atomic transport in solids; defects in crystals; mechanical behavior of materials; phase diagrams and their utilization; heat treatment of metals and alloys; electrical and optical properties of materials; strengthening mechanisms in solids and relationships between microstructure and properties. Lectures, recitations, laboratory.</p>
+          </details>
+
+          <details>
+            <summary>ENGN 0510: Electricity and Magnetism</summary>
+            <p>Fundamental laws of electricity and magnetism and their role in engineering applications. Concepts of charge, current, potential, electric field, magnetic field. Resistance, capacitance, and inductance. Electric and magnetic properties of materials. Electromagnetic wave propagation. Lectures, recitation, and laboratory.</p>
+          </details>
+
+          <details>
+            <summary>ENGN 0720: Thermodynamics</summary>
+            <p>An introduction to macroscopic thermodynamics and some of its engineering applications. Presents basic concepts related to equilibrium and the zeroth, first and second laws for both closed and open systems. Examples include analysis of engines, turbines, and other engineering cycles, phase equilibrium and separation processes, chemical reactions, surface phenomena, magnetic and dielectric materials. Lectures, recitations, and laboratory.</p>
+          </details>
+
+          <details>
+            <summary>[Fall 2026] PHYS 1510: Advanced Electromagnetic Theory</summary>
+            <p>Maxwell's laws and electromagnetic theory. Electromagnetic waves and radiation. Special relativity.</p>
+          </details>
+        </div>
+
+        <!-- Computer Science -->
+        <div class="course-group">
+          <h4>Computer Science</h4>
+
+          <details>
+            <summary>CSCI 0150: Introduction to Object-Oriented Programming and Computer Science</summary>
+            <p>Introduces programming in Java (a modern, widely-used programming language), interactive 2D computer graphics, and some fundamental data structures and algorithms. Students learn by programming a sequence of interactive graphics programs which gradually increase in complexity, including Doodle Jump, Tetris, and a significant final project.</p>
+          </details>
+
+          <details>
+            <summary>APMA 0160: Introduction to Scientific Computing</summary>
+            <p>For students in any discipline that may involve numerical computations. Includes instruction for programming in MATLAB. Applications discussed include solution of linear equations (with vectors and matrices) and nonlinear equations (by bisection, iteration, and Newton's method), interpolation, and curve-fitting, difference equations, iterated maps, numerical differentiation and integration, and differential equations.</p>
+          </details>
+
+          <details>
+            <summary>ENGN 2520: Pattern Recognition and Machine Learning</summary>
+            <p>This course will cover fundamental concepts in pattern recognition and machine learning. We will focus on mathematical formulations and computational methods that are broadly applicable. Topics include supervised learning, parametric and non-parametric models, decision theory, bayesian inference, dimensionality reduction, clustering, feature selection, generalization bounds, support vector machines and neural networks. We will consider motivating applications in computer vision, signal processing, medical diagnostics, and information retrieval.</p>
+          </details>
+        </div>
+
+        <!-- EE Upper Level -->
+        <div class="course-group">
+          <h4>Electrical Engineering Upper Level Courses</h4>
+
+          <details>
+            <summary>ENGN 0520: Electrical Circuits and Signals</summary>
+            <p>An introduction to electrical circuits and signals. Emphasizes the analysis and design of systems described by ordinary linear differential equations. The frequency domain is introduced early and stressed throughout. Other topics include circuit theorems, power transfer, transient analysis, Fourier series, Laplace transform, a brief intro to diodes and transistors, and a little control theory. There is a lecture on engineering ethics. Laboratories apply concepts to real problems in audio and controls. Lectures, recitation, and laboratory.</p>
+          </details>
+
+          <details>
+            <summary>ENGN 1570: Linear System Analysis</summary>
+            <p>Analysis of discrete and continuous electrical signals and systems in both time and frequency domains. Modulation, sampling, spectral analysis, analog and digital filtering. Fourier, Laplace and z-transforms, the state-space approach, stability of linear systems.</p>
+          </details>
+
+          <details>
+            <summary>ENGN 1590: Semiconductor Devices</summary>
+            <p>An introduction to semiconductor device physics and basic electronic properties of semiconductors, including junctions, heterojunctions and fundamental device building blocks. Current and proposed semiconductor devices: field effect transistors, bipolar transistors, quantum-effect devices, and optoelectronic devices. A brief fabrication lab will introduce junction fabrication in the cleanroom.</p>
+          </details>
+          
+          <details>
+            <summary>ENGN 1930Y: Control Systems Engineering</summary>
+            <p>Control Systems is an Engineering discipline that applies control theory to analyze and design systems with desired response behavior. The objective of this course is to introduce the student to the topic of feedback control design with applications on many diverse systems. The course will cover the fundamentals of classical control theory such as modeling, simulation, stability, controller design and digital implementation. It will also address basic aspects of state-space and modern control theory. The course is open to all Engineering majors and will make use of existing simulation packages such as Matlab/Simulink.</p>
+          </details>
+
+          <details>
+            <summary>[Spring 2027] ENGN 1580: Communication Systems</summary>
+            <p>We will learn basic communication and information theory, but with examples drawn from a variety of areas not normally considered communication.Analog modulation, digitization, signal space, digital modulation and noise, information theory, selected topics in modern communication/information network theory and applications to biology and physics as time and interest permit.</p>
+          </details>
+
+          <details>
+            <summary>[Spring 2026] ENGN 1620: Analysis and Design of Electronic Circuits</summary>
+            <p>Analysis and design of a variety of fundamental analog integrated microelectronic circuits at the transistor level and their practical applications to sensing and interfacing in a range of fields; life sciences, wireless communications, and computing. Elementary device physics and circuit characteristics of semiconductor diodes and MOS field effect transistors (FETs) as fundamental building blocks will be discussed. Concepts of noise and fundamental limits of sensing will also be discussed.</p>
+          </details>
+
+          <details>
+            <summary>[Fall 2026] ENGN 1630: Digital Electronics Systems Design</summary>
+            <p>Fundamentals of digital logic design including: Boolean algebra, gates, truth tables, logic families, flip-flops, finite state machines, memory, and timing. More advanced topics include A-D conversion, binary arithmetic, CPU organization, programmable logic (CPLDs and FPGAs), and VHDL. Extensive laboratory requirement.</p>
+          </details>
+
+          <details>
+            <summary>[Fall 2026] ENGN 1650: Embedded Microprocessor Design</summary>
+            <p>This is a combined lecture and design project course offering experience in the open-ended design of an electronic product or system employing an embedded microprocessor by small-group design teams. Activity includes product specification, circuit design, programming, printed circuit layout, construction, packaging, and economic assessment. Teams are expected to produce functional products. Lecture topics will be adjusted to reflect the chosen design problems. Emphasis is placed on the criteria for choosing processors and on the interfaces and programming requirements of the system.</p>
+          </details>
+
+          <details>
+            <summary>[Spring 2027] ENGN 2709: Electrification and Decarbonization</summary>
+            <p>Decarbonization depends on electrification coupled with conversion to renewable sources of electricity generation. Students will learn the fundamentals of the electrical grid in the U.S. including its history, ownership and regulatory structure, physics, and economics. Emphasis is on how the traditional and risk-averse focus on reliability and low cost can evolve in the decarbonization transition, expanding to target a smarter, more resilient, and more equitable set of societal goods. Hands-on skills will be gained through several open-source modeling tools applied to grid modernization projects and case studies. Major topics include optimization in energy systems; the physics of the electric grid; centralized power transmission and distribution systems; distributed energy resources, including storage and microgrids; reliability, resilience, energy burden, and equity; and evolving power system business models and electricity market issues.</p>
+          </details>
+        </div>
+      </details>
+
+      <!-- ===== Economics ===== -->
+<details>
+  <summary>Bachelor of Arts — Economics</summary>
+
+  <!-- Mathematics -->
+  <div class="course-group">
+    <h4>Mathematics</h4>
+    <p>Refer to Electrical Engineering section</p>
+  </div>
+
+  <!-- Economics Foundations -->
+  <div class="course-group">
+    <h4>Economics Foundations</h4>
+
+    <details>
+      <summary>ECON 0110: Principles of Economics</summary>
+      <p>Extensive coverage of economic issues, institutions, and terminology, plus an introduction to economic analysis and its application to current social problems.</p>
+    </details>
+
+    <details>
+      <summary>ECON 1130: Intermediate Microeconomics (Mathematical)</summary>
+      <p>Microeconomic theory: Theories of the consumer and firm, competitive equilibrium, factor markets, imperfect competition, game theory, welfare economics, general equilibrium.</p>
+    </details>
+
+    <details>
+      <summary>ECON 1210: Intermediate Macroeconomics</summary>
+      <p>This course introduces students to various topics in macroeconomics giving an overview of the foundations of the economy. Concepts such as output, consumption, investment, unemployment, inflation, and economic growth will be addressed in this course. The course work emphasizes both the theoretical and practical content of the course material and its connection to various economic issues. Knowledge of macroeconomics prepares students for other courses and is a good general foundation for understanding the economy we live in.</p>
+    </details>
+  </div>
+
+  <!-- Economics Upper Level -->
+  <div class="course-group">
+    <h4>Economics Upper Level</h4>
+
+    <details>
+      <summary>ECON 1630: Mathematical Econometrics I</summary>
+      <p>Advanced introduction to econometrics with applications in finance and economics. How to formulate and test economic questions of interest. The multivariate linear regression model is treated in detail, including tests of the model's underlying assumptions. Other topics include: asymptotic analysis, instrumental variable estimation, and likelihood analysis. Convergence concepts and matrix algebra are used extensively.</p>
+    </details>
+
+    <details>
+      <summary>ECON 1710: Investments I</summary>
+      <p>The function and operation of asset markets; the determinants of the prices of stocks, bonds, options, and futures; the relations between risk, return, and investment management; the capital asset pricing model, normative portfolio management, and market efficiency.</p>
+    </details>
+
+    <details>
+      <summary>ECON 1850: Theory of Economic Growth</summary>
+      <p>This course explores the origins of wealth and inequality across the globe. It examines: (i) the determinants of the growth process since the emergence of Homo sapiens, (ii) the roots of the dramatic transformation in living standards in the past two centuries, and (iii) the role of deeply rooted geographical, institutional, and cultural characteristics as well as human diversity in the uneven development across the countries and regions. The analysis proposes a resolution for some of the most fundamental mysteries of the journey of humanity.</p>
+    </details>
+
+    <details>
+      <summary>[Fall 2026] ECON 1200: History of Economic Thought</summary>
+      <p>This course covers the history of modern (20th century) economics and economic thinking from the marginal revolution through the first half of the 20th century. The aim will be to develop an understanding of the origin and evolution of central concepts in economic theory, including subjective utility, marginal analysis, competitive markets, examine methodological disputes over positivism and formalism, and the development of general competitive equilibrium. We will consider the emergence of certain subfields in modern economics, and end with a discussion of the relevance of these ideas for economics in the 21st century.</p>
+    </details>
+
+    <details>
+      <summary>[Spring 2027] ECON 1420: Industrial Organization</summary>
+      <p>A study of industry structure and firm conduct and its economic/antitrust implications. Theoretical and empirical examinations of strategic firm interactions in oligopolistic markets, dominant firm behaviors, and entry deterrence by incumbents. Economics of innovation: research and development activities and government patent policies. Network effects, and why market share critical mass matters for firm survival in certain markets.</p>
+    </details>
+
+    <details>
+      <summary>[Spring 2027] ECON 1720: Corporate Finance</summary>
+      <p>A study of theories of decision-making within corporations, with empirical evidence as background. Topics include capital budgeting, risk, securities issuance, capital structure, dividend policy, compensation policy, mergers and acquisitions, leveraged buyouts and corporate restructuring.</p>
+    </details>
+
+    <details>
+      <summary>[Fall 2026] ECON 1750: Investments II</summary>
+      <p>Individual securities: forwards, futures, options and basic derivatives, pricing conditions. Financial markets: main empirical features, equity premium and risk-free rate puzzles, consumption based asset pricing models, stock market participation, international diversification, and topics in behavioral finance.</p>
+    </details>
+
+  </div>
+</details>
+
+
+      <!-- ===== Other Courses ===== -->
+      <details>
+        <summary>Other Courses</summary>
+
+        <details>
+          <summary>GRMN 1320X: Weimar Culture: German Modernity and Its Discontents</summary>
+          <p>The years of the Weimar Republic were the hothouse of German cultural modernity. In a situation of crisis, the time between the end of World War I and the rise to power of National Socialism sees the emergence of new media as radio and film, an ever-accelerating urban life, changing social & gender roles, political radicalisms, as well as different artistic avantgarde movements. Weimar literature breaks from tradition, developing innovative forms to represent this new culture. At the same time, a flourishing journalistic landscape brings about new modes of cultural critique, essayistic theories of modernity, and figures such as the flaneur who reads the modern cityscape. Following a brief introduction to the historical background, we will read two novels of the period, two plays, & a series of selected poems, accompanied by journalistic pieces & representative examples of contemporary literary criticism.</p>
+        </details>
+
+        <details>
+          <summary>COLT 0710Q: The Odyssey in Literature and Film</summary>
+          <p>Examines reincarnations of the Homeric figure of Odysseus in contemporary literatures and film as modernist figure, postcolonial subject, and existentialist hero. How is the Odysseus myth altered from culture to culture (Greece, Rome, Ireland, the Caribbean)? How is it re-visioned in different historical periods and from different perspectives (feminist, marxist, postcolonial) and genres (epic, poetry, the novel, film, drama)? Major authors include Homer, Virgil, Tennyson, Joyce, Kazantzakis, Cavafy, Seferis, Atwood, Walcott; criticism by Bakhtin, Edith Hall, Adorno, Derrida. Films include works by Angelopoulos, the Coen brothers; Singer’s Usual Suspects, Mendes’ James Bond offering Skyfall, and Kubrick’s 2001: Space Odyssey.</p>
+        </details>
+
+        <details>
+          <summary>MUSC 0680: Chamber Music Performance</summary>
+          <p>The practical study of the literature of chamber music through participation in a small ensemble. Regular rehearsals, coaching by department staff, and performances are required. Enrollment is by audition. Students will be notified of audition results within the first ten days of the semester. Restricted to skilled instrumentalists.</p>
+        </details>
+      </details>
+
+    </div>
+  </div>
+
+  <div class="edu-block">
+    <h3>St. Paul’s School — High School Diploma</h3>
+    <p style="line-height:1.25;">Concord, NH</p>
+    <p style="line-height:1.25;">Graduation 2023 — GPA: 4.02 / 4.0</p>
+    <p style="line-height:1.25;">Cum Laude Society Inductee</p>
+  </div>
+</section>
+
 
     <!-- Projects -->
     <section id="projects" class="snap-section">
@@ -293,6 +459,6 @@
     </section>
   </main>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

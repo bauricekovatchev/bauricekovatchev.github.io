@@ -5,6 +5,7 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+
 html, body {
   height: 100%;
 }
@@ -31,6 +32,7 @@ nav {
   flex-direction: column;
   align-items: flex-start;
 }
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -38,10 +40,12 @@ nav {
   color: #bfe7ff;
   margin-bottom: 28px;
 }
+
 nav ul {
   width: 100%;
   list-style: none;
 }
+
 nav li {
   margin: 12px 0;
   color: #9aa0a6;
@@ -49,11 +53,13 @@ nav li {
   cursor: pointer;
   transition: all 0.18s ease;
 }
+
 nav li.active {
   color: #61dafb;
   font-size: 1.12rem;
   font-weight: 800;
 }
+
 nav li:hover {
   color: #87d6ff;
   transform: translateX(3px);
@@ -82,6 +88,7 @@ main {
   scroll-snap-align: start;
   background: linear-gradient(180deg, rgba(15,17,20,1) 0%, rgba(17,19,22,1) 100%);
 }
+
 .snap-section:nth-child(even) {
   background: #0f1216;
 }
@@ -95,17 +102,20 @@ main {
   margin-bottom: 18px;
   letter-spacing: 0.5px;
 }
+
 h1 {
   font-size: 2rem;
   color: #fff;
   margin-bottom: 14px;
 }
+
 p {
   max-width: 900px;
   color: #c7cbd0;
   line-height: 1.5;
   margin-bottom: 12px;
 }
+
 ul {
   margin-left: 32px;
 }
@@ -116,6 +126,7 @@ ul {
   gap: 18px;
   margin-top: 10px;
 }
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -132,11 +143,13 @@ ul {
   color: inherit;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
+
 .button img {
   width: 20px;
   height: 20px;
   display: block;
 }
+
 .button:hover {
   transform: translateY(-3px);
 }
@@ -147,14 +160,17 @@ ul {
   color: #0b0c0d;
   box-shadow: 0 6px 18px rgba(240, 240, 240, 0.06);
 }
+
 .resume:hover {
   box-shadow: 0 8px 28px rgba(79, 176, 255, 0.12);
   transform: translateY(-3px);
 }
+
 .linkedin {
   background: #0077b5;
   color: #fff;
 }
+
 .contact {
   background: #22252a;
   color: #fff;
@@ -173,16 +189,19 @@ ul {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
   margin-top: 18px;
 }
+
 .edu-block h3,
 .work-block h3,
 .research-block h3 {
   color: #bfe7ff;
   margin-bottom: 6px;
 }
+
 .muted {
   color: #9aa0a6;
   margin-top: 6px;
 }
+
 .small {
   font-size: 0.9rem;
 }
@@ -199,9 +218,11 @@ ul {
   width: 100%;
   max-width: 980px;
 }
+
 .course-group {
   margin-top: 10px;
 }
+
 .course-group h4 {
   margin-bottom: 6px;
   color: #bfe7ff;
@@ -214,19 +235,23 @@ ul {
   flex-direction: column;
   align-items: center;
 }
+
 #projects h1 {
   margin-bottom: 18px;
 }
+
 .proj-subsection {
   width: 100%;
   margin-top: 28px;
 }
+
 .proj-subsection h2 {
   color: #ffffff;
   text-align: center;
   margin-bottom: 16px;
   font-size: 1.6rem;
 }
+
 .card-grid.two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -234,6 +259,7 @@ ul {
   width: 100%;
   max-width: 1100px;
 }
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -244,15 +270,18 @@ ul {
   border: 1px solid #1f2326;
   transition: transform 0.2s ease;
 }
+
 .project-card:hover {
   transform: scale(1.02);
 }
+
 .card-title {
   padding: 14px;
   font-weight: 800;
   color: #cfefff;
   background: linear-gradient(90deg, rgba(9,16,22,0.6), rgba(18,24,29,0.4));
 }
+
 .card-image {
   height: 260px;
   background: #ffffff;
@@ -264,6 +293,7 @@ ul {
   width: 100%;
   max-width: 980px;
 }
+
 .skills-dropdowns details {
   width: 100%;
   padding: 12px;
@@ -278,6 +308,7 @@ ul {
   color: #61b8ff;
   text-decoration: none;
 }
+
 #contact a:hover {
   text-decoration: underline;
 }
@@ -287,26 +318,40 @@ ul {
   nav {
     width: 30%;
   }
+
   main {
     margin-left: 30%;
     width: 70%;
   }
+
   .card-grid.two-col {
     grid-template-columns: 1fr;
   }
+
   .button {
     min-width: 140px;
   }
 }
+
 @media (max-width: 600px) {
   nav {
     display: none;
   }
+
   main {
     margin-left: 0;
     width: 100%;
   }
+
   .name-title {
     font-size: 2.4rem;
   }
+}
+
+/* ================================ */
+/* Course description spacing tweak */
+/* ================================ */
+
+.course-dropdowns details details p {
+  margin-top: 12px;
 }
